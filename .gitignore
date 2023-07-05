@@ -174,7 +174,9 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/django
 
 # ignoring settings
+settings_*.py
 setting_*.py
+**/settings_*.py
 
 # ignore beat schedule 
 celerybeat-schedule.*

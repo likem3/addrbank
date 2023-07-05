@@ -28,3 +28,4 @@ else:
         print(f'please provide {ENVIRONMENT_SETTING}.py')
 
 # write env settings here
+SAFE_USER_KEY = os.getenv('SAFE_USER_KEY')
