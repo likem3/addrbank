@@ -31,7 +31,6 @@ class AdminAddress(BaseAdmin):
 
 class AdminCurrency(BaseAdmin):
     _readonly_fields = ['created_by', 'is_deleted']
-    createonly_fields = ['status']
 
 
 class AdminNetwork(BaseAdmin):

@@ -1,9 +1,11 @@
 from django.urls import path
 from apps.views import (
-    CurrencyListView
+    CurrencyListView,
+    AddressRetrieveView
 )
 
 
 urlpatterns = [
     path('currencies/', CurrencyListView.as_view()),
+    path('address/', AddressRetrieveView.as_view()),
 ]

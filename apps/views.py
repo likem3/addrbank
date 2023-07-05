@@ -10,6 +10,3 @@ class CurrencyListView(generics.ListAPIView):
 
 class AddressRetrieveView(generics.CreateAPIView):
     serializer_class = AddressSerializer
-
-    def get_queryset(self):
-        return super().get_queryset()
