@@ -4,8 +4,8 @@ from .currency import Currency
 
 class Address(BaseModel):
     address = models.CharField(max_length=255, unique=True, help_text="unique currency address")
-    phrase = models.TextField(help_text="wallet pharse")
-    resource = models.TextField(help_text="resource app of the wallet or url")
+    phrase = models.TextField(null=True, blank=True, help_text="wallet pharse")
+    resource = models.TextField(null=True, blank=True, help_text="resource app of the wallet or url")
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE, related_name="address", help_text="cryptocurrency of the address")
     is_used = models.BooleanField(default=False, help_text="address in use or not")
     user_id = models.PositiveIntegerField(null=True, blank=True, help_text="user id use the address")

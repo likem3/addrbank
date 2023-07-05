@@ -1,7 +1,9 @@
+from typing import Any
 from django.contrib import admin
 from utils.admin import BaseAdmin
 from .models.currency import Currency
 from .models.address import Address
+from .models.network import Network
 from cryptography.fernet import Fernet
 from django.conf import settings as app_settings
 from utils.helpers import fernet_key
@@ -17,9 +19,11 @@ class AdminAddress(BaseAdmin):
         if change:
             obj.phrase = Address.objects.get(pk=obj.pk).phrase
         else:
-            fernet = Fernet(self.key)
-            encrypted_data = fernet.encrypt(obj.phrase.encode('utf-8'))
-            obj.phrase = encrypted_data.decode()
+            if obj.phrase:
+                fernet = Fernet(self.key)
+                encrypted_data = fernet.encrypt(obj.phrase.encode('utf-8'))
+                obj.phrase = encrypted_data.decode()
+
             obj.created_by = request.user
 
         obj.save()
@@ -27,8 +31,13 @@ class AdminAddress(BaseAdmin):
 
 class AdminCurrency(BaseAdmin):
     _readonly_fields = ['created_by', 'is_deleted']
-    # createonly_fields = ['status']
+    createonly_fields = ['status']
 
-# Register your models here.
+
+class AdminNetwork(BaseAdmin):
+    _readonly_fields = ['created_by', 'is_deleted']
+
+
 admin.site.register(Currency, AdminCurrency)
 admin.site.register(Address, AdminAddress)
+admin.site.register(Network, AdminNetwork)
