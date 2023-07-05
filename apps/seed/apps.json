@@ -1,0 +1,293 @@
+[
+{
+    "model": "apps.currency",
+    "pk": 1,
+    "fields": {
+        "created_at": "2023-07-04T12:47:22.733Z",
+        "updated_at": "2023-07-04T12:47:22.733Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "blockchain": "bitcoin",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 2,
+    "fields": {
+        "created_at": "2023-07-04T12:48:36.377Z",
+        "updated_at": "2023-07-04T12:48:36.377Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "blockchain": "ethereum",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 3,
+    "fields": {
+        "created_at": "2023-07-04T12:49:43.305Z",
+        "updated_at": "2023-07-05T06:06:31.024Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Tether",
+        "symbol": "USDT",
+        "blockchain": "tron",
+        "std": "trc20"
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 4,
+    "fields": {
+        "created_at": "2023-07-04T12:50:05.741Z",
+        "updated_at": "2023-07-04T12:50:05.741Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Tether",
+        "symbol": "USDT",
+        "blockchain": "ethereum",
+        "std": "erc20"
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 5,
+    "fields": {
+        "created_at": "2023-07-04T12:52:12.308Z",
+        "updated_at": "2023-07-04T12:52:12.309Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Binance",
+        "symbol": "BNB",
+        "blockchain": "binance",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 6,
+    "fields": {
+        "created_at": "2023-07-04T12:53:11.824Z",
+        "updated_at": "2023-07-04T12:53:11.824Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "blockchain": "ethereum",
+        "std": "erc20"
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 7,
+    "fields": {
+        "created_at": "2023-07-04T12:54:53.854Z",
+        "updated_at": "2023-07-04T12:54:53.854Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Ripple",
+        "symbol": "XRP",
+        "blockchain": "ripple",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 8,
+    "fields": {
+        "created_at": "2023-07-04T12:56:10.106Z",
+        "updated_at": "2023-07-04T13:01:33.433Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Cardano",
+        "symbol": "ADA",
+        "blockchain": "cardano",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 9,
+    "fields": {
+        "created_at": "2023-07-04T12:56:56.760Z",
+        "updated_at": "2023-07-04T12:56:56.760Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "blockchain": "dogecoin",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 10,
+    "fields": {
+        "created_at": "2023-07-04T12:57:18.476Z",
+        "updated_at": "2023-07-04T13:01:41.664Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Tron",
+        "symbol": "TRX",
+        "blockchain": "tron",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 11,
+    "fields": {
+        "created_at": "2023-07-04T12:57:54.605Z",
+        "updated_at": "2023-07-04T13:01:51.001Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Solana",
+        "symbol": "SOL",
+        "blockchain": "solana",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 12,
+    "fields": {
+        "created_at": "2023-07-04T12:58:57.953Z",
+        "updated_at": "2023-07-05T02:12:54.853Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Litecoin",
+        "symbol": "LTC",
+        "blockchain": "litecoin",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 13,
+    "fields": {
+        "created_at": "2023-07-05T02:13:26.179Z",
+        "updated_at": "2023-07-05T02:13:26.179Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Dash",
+        "symbol": "DASH",
+        "blockchain": "Dash",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 14,
+    "fields": {
+        "created_at": "2023-07-05T02:15:47.566Z",
+        "updated_at": "2023-07-05T02:15:47.566Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Ethereum Classic",
+        "symbol": "ETC",
+        "blockchain": "ethereum-classic",
+        "std": "ERC20"
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 15,
+    "fields": {
+        "created_at": "2023-07-05T02:17:02.173Z",
+        "updated_at": "2023-07-05T02:17:02.173Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Zcash",
+        "symbol": "ZEC",
+        "blockchain": "zcash",
+        "std": null
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 16,
+    "fields": {
+        "created_at": "2023-07-05T02:18:27.383Z",
+        "updated_at": "2023-07-05T02:18:27.383Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Stellar",
+        "symbol": "XLM",
+        "blockchain": "stellar",
+        "std": "SCP10"
+    }
+},
+{
+    "model": "apps.currency",
+    "pk": 17,
+    "fields": {
+        "created_at": "2023-07-05T02:19:37.712Z",
+        "updated_at": "2023-07-05T06:09:20.678Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Tezoz",
+        "symbol": "XTZ",
+        "blockchain": "tezoz",
+        "std": "TZIP"
+    }
+},
+{
+    "model": "apps.address",
+    "pk": 2,
+    "fields": {
+        "created_at": "2023-07-05T06:04:46.063Z",
+        "updated_at": "2023-07-05T06:04:55.147Z",
+        "deleted_at": null,
+        "created_by": 1,
+        "status": "",
+        "is_deleted": false,
+        "address": "asdasd adasdasd",
+        "phrase": "gAAAAABkpQf-ftekos92TlyfJXFo3OCLbyh_isBZ0XJ5r7XjzlrMR6iZnIKOIPdhX-GmGtbUtUOvHzfBpUu5uDcHw0YdKpJ4YQ==",
+        "resource": "asd asdasd",
+        "currency": 3,
+        "is_used": false,
+        "user_id": null,
+        "label": null
+    }
+}
+]
