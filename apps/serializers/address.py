@@ -13,13 +13,6 @@ class AddressSerializer(serializers.ModelSerializer):
             'user_id': validated_data['user_id'],
             'is_used': is_used
         }
-    
-    def generate_query_filter(self, validated_data):
-        return {
-            'currency_id': validated_data['currency_id'],
-            'user_id': validated_data['user_id'],
-            'is_used': False
-        }
 
     class Meta:
         model = Address
