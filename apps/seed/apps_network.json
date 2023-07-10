@@ -1,0 +1,92 @@
+[
+{
+    "model": "apps.network",
+    "pk": 1,
+    "fields": {
+        "created_at": "2023-07-05T07:51:32.708Z",
+        "updated_at": "2023-07-05T07:51:32.708Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Mainnet",
+        "description": "Main network of cryptocurrency on production env always use mainnet",
+        "type": "mainnet"
+    }
+},
+{
+    "model": "apps.network",
+    "pk": 2,
+    "fields": {
+        "created_at": "2023-07-05T07:52:50.662Z",
+        "updated_at": "2023-07-05T07:52:50.662Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Testnet",
+        "description": "Testnet is testing environtment for several blockchain. for testing some of blockchain using testnet",
+        "type": "testnet"
+    }
+},
+{
+    "model": "apps.network",
+    "pk": 3,
+    "fields": {
+        "created_at": "2023-07-05T07:54:53.731Z",
+        "updated_at": "2023-07-05T07:54:53.731Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Nile",
+        "description": "Nile test network is testnetwork for serveral blockchain from Tron",
+        "type": "nile"
+    }
+},
+{
+    "model": "apps.network",
+    "pk": 4,
+    "fields": {
+        "created_at": "2023-07-05T07:55:34.903Z",
+        "updated_at": "2023-07-05T07:55:34.903Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Goerli",
+        "description": "Goerli network is test network for new ethereum blockchain",
+        "type": "goerli"
+    }
+},
+{
+    "model": "apps.network",
+    "pk": 5,
+    "fields": {
+        "created_at": "2023-07-05T07:57:07.287Z",
+        "updated_at": "2023-07-05T07:57:07.287Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "Mordor",
+        "description": "Mordor network is test net for classic ethereum blockchain",
+        "type": "mordor"
+    }
+},
+{
+    "model": "apps.network",
+    "pk": 6,
+    "fields": {
+        "created_at": "2023-07-05T08:00:27.339Z",
+        "updated_at": "2023-07-05T08:00:27.339Z",
+        "deleted_at": null,
+        "created_by": null,
+        "status": "active",
+        "is_deleted": false,
+        "name": "GhostNet",
+        "description": "-",
+        "type": "ghostnet"
+    }
+}
+]

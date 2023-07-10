@@ -1,95 +1,5 @@
 [
 {
-    "model": "apps.network",
-    "pk": 1,
-    "fields": {
-        "created_at": "2023-07-05T07:51:32.708Z",
-        "updated_at": "2023-07-05T07:51:32.708Z",
-        "deleted_at": null,
-        "created_by": null,
-        "status": "active",
-        "is_deleted": false,
-        "name": "Mainnet",
-        "description": "Main network of cryptocurrency on production env always use mainnet",
-        "type": "mainnet"
-    }
-},
-{
-    "model": "apps.network",
-    "pk": 2,
-    "fields": {
-        "created_at": "2023-07-05T07:52:50.662Z",
-        "updated_at": "2023-07-05T07:52:50.662Z",
-        "deleted_at": null,
-        "created_by": null,
-        "status": "active",
-        "is_deleted": false,
-        "name": "Testnet",
-        "description": "Testnet is testing environtment for several blockchain. for testing some of blockchain using testnet",
-        "type": "testnet"
-    }
-},
-{
-    "model": "apps.network",
-    "pk": 3,
-    "fields": {
-        "created_at": "2023-07-05T07:54:53.731Z",
-        "updated_at": "2023-07-05T07:54:53.731Z",
-        "deleted_at": null,
-        "created_by": null,
-        "status": "active",
-        "is_deleted": false,
-        "name": "Nile",
-        "description": "Nile test network is testnetwork for serveral blockchain from Tron",
-        "type": "nile"
-    }
-},
-{
-    "model": "apps.network",
-    "pk": 4,
-    "fields": {
-        "created_at": "2023-07-05T07:55:34.903Z",
-        "updated_at": "2023-07-05T07:55:34.903Z",
-        "deleted_at": null,
-        "created_by": null,
-        "status": "active",
-        "is_deleted": false,
-        "name": "Goerli",
-        "description": "Goerli network is test network for new ethereum blockchain",
-        "type": "goerli"
-    }
-},
-{
-    "model": "apps.network",
-    "pk": 5,
-    "fields": {
-        "created_at": "2023-07-05T07:57:07.287Z",
-        "updated_at": "2023-07-05T07:57:07.287Z",
-        "deleted_at": null,
-        "created_by": null,
-        "status": "active",
-        "is_deleted": false,
-        "name": "Mordor",
-        "description": "Mordor network is test net for classic ethereum blockchain",
-        "type": "mordor"
-    }
-},
-{
-    "model": "apps.network",
-    "pk": 6,
-    "fields": {
-        "created_at": "2023-07-05T08:00:27.339Z",
-        "updated_at": "2023-07-05T08:00:27.339Z",
-        "deleted_at": null,
-        "created_by": null,
-        "status": "active",
-        "is_deleted": false,
-        "name": "GhostNet",
-        "description": "-",
-        "type": "ghostnet"
-    }
-},
-{
     "model": "apps.currency",
     "pk": 1,
     "fields": {
@@ -145,10 +55,10 @@
     "pk": 4,
     "fields": {
         "created_at": "2023-07-04T12:50:05.741Z",
-        "updated_at": "2023-07-04T12:50:05.741Z",
+        "updated_at": "2023-07-05T11:35:28.744Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Tether",
         "symbol": "USDT",
@@ -162,10 +72,10 @@
     "pk": 5,
     "fields": {
         "created_at": "2023-07-04T12:52:12.308Z",
-        "updated_at": "2023-07-04T12:52:12.309Z",
+        "updated_at": "2023-07-05T11:36:25.945Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Binance",
         "symbol": "BNB",
@@ -179,10 +89,10 @@
     "pk": 6,
     "fields": {
         "created_at": "2023-07-04T12:53:11.824Z",
-        "updated_at": "2023-07-04T12:53:11.824Z",
+        "updated_at": "2023-07-05T11:36:31.425Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "USD Coin",
         "symbol": "USDC",
@@ -196,10 +106,10 @@
     "pk": 7,
     "fields": {
         "created_at": "2023-07-04T12:54:53.854Z",
-        "updated_at": "2023-07-04T12:54:53.854Z",
+        "updated_at": "2023-07-05T11:36:36.624Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Ripple",
         "symbol": "XRP",
@@ -213,10 +123,10 @@
     "pk": 8,
     "fields": {
         "created_at": "2023-07-04T12:56:10.106Z",
-        "updated_at": "2023-07-04T13:01:33.433Z",
+        "updated_at": "2023-07-05T11:36:41.004Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Cardano",
         "symbol": "ADA",
@@ -264,10 +174,10 @@
     "pk": 11,
     "fields": {
         "created_at": "2023-07-04T12:57:54.605Z",
-        "updated_at": "2023-07-04T13:01:51.001Z",
+        "updated_at": "2023-07-05T11:36:45.207Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Solana",
         "symbol": "SOL",
@@ -281,10 +191,10 @@
     "pk": 12,
     "fields": {
         "created_at": "2023-07-04T12:58:57.953Z",
-        "updated_at": "2023-07-05T02:12:54.853Z",
+        "updated_at": "2023-07-05T11:36:50.660Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Litecoin",
         "symbol": "LTC",
@@ -298,10 +208,10 @@
     "pk": 13,
     "fields": {
         "created_at": "2023-07-05T02:13:26.179Z",
-        "updated_at": "2023-07-05T02:13:26.179Z",
+        "updated_at": "2023-07-05T11:36:54.879Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Dash",
         "symbol": "DASH",
@@ -315,10 +225,10 @@
     "pk": 14,
     "fields": {
         "created_at": "2023-07-05T02:15:47.566Z",
-        "updated_at": "2023-07-05T02:15:47.566Z",
+        "updated_at": "2023-07-05T11:37:04.447Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Ethereum Classic",
         "symbol": "ETC",
@@ -332,10 +242,10 @@
     "pk": 15,
     "fields": {
         "created_at": "2023-07-05T02:17:02.173Z",
-        "updated_at": "2023-07-05T08:01:36.183Z",
+        "updated_at": "2023-07-05T11:37:10.353Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Zcash",
         "symbol": "ZEC",
@@ -349,10 +259,10 @@
     "pk": 16,
     "fields": {
         "created_at": "2023-07-05T02:18:27.383Z",
-        "updated_at": "2023-07-05T08:01:10.118Z",
+        "updated_at": "2023-07-05T11:34:43.988Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Stellar",
         "symbol": "XLM",
@@ -366,35 +276,16 @@
     "pk": 17,
     "fields": {
         "created_at": "2023-07-05T02:19:37.712Z",
-        "updated_at": "2023-07-05T08:00:53.575Z",
+        "updated_at": "2023-07-05T11:37:17.987Z",
         "deleted_at": null,
         "created_by": 1,
-        "status": "active",
+        "status": "nonactive",
         "is_deleted": false,
         "name": "Tezoz",
         "symbol": "XTZ",
         "blockchain": "tezoz",
         "std": "TZIP",
         "network": 1
-    }
-},
-{
-    "model": "apps.address",
-    "pk": 2,
-    "fields": {
-        "created_at": "2023-07-05T06:04:46.063Z",
-        "updated_at": "2023-07-05T06:04:55.147Z",
-        "deleted_at": null,
-        "created_by": 1,
-        "status": "",
-        "is_deleted": false,
-        "address": "asdasd adasdasd",
-        "phrase": "gAAAAABkpQf-ftekos92TlyfJXFo3OCLbyh_isBZ0XJ5r7XjzlrMR6iZnIKOIPdhX-GmGtbUtUOvHzfBpUu5uDcHw0YdKpJ4YQ==",
-        "resource": "asd asdasd",
-        "currency": 3,
-        "is_used": false,
-        "user_id": null,
-        "label": null
     }
 }
 ]
