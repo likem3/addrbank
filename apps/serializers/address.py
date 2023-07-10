@@ -34,7 +34,7 @@ class AddressSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         try:
-            query = self.generate_query(validated_data)
+            query = self.generate_query(validated_data, is_used=True)
             user_address = Address.objects.get(**query)
             if user_address:
                 return user_address
