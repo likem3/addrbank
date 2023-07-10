@@ -1,7 +1,19 @@
 from rest_framework import serializers
-from apps.models import Currency, Address
+from apps.models import Currency, Network
+
+
+class NetworkSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Network
+        fields = (
+            'name',
+            'description',
+            'type',
+        )
+
 
 class CurrencySerializer(serializers.ModelSerializer):
+    network = NetworkSerializer(read_only=True)
     class Meta:
         model = Currency
         fields = (
@@ -9,7 +21,8 @@ class CurrencySerializer(serializers.ModelSerializer):
             'name',
             'symbol',
             'blockchain',
-            'std'
+            'std',
+            'network'
         )
 
     def to_representation(self, instance):
