@@ -15,6 +15,11 @@ class AdminAddress(BaseAdmin):
     _readonly_fields = ['is_used', 'user_id', 'label', 'status', 'created_by']
     createonly_fields = ['address', 'phrase', 'currency']
 
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == "currency":
+            kwargs["queryset"] = Currency.objects.filter(status='active')
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
+
     def save_model(self, request, obj, form, change):
         if change:
             obj.phrase = Address.objects.get(pk=obj.pk).phrase
