@@ -10,9 +10,32 @@ import base64
 
 
 class AdminAddress(BaseAdmin):
+    list_display = [
+        'address',
+        'resource',
+        'get_currency',
+        'get_network',
+        'is_used',
+        'user_id',
+        'label',
+        'created_at',
+    ]
+    list_per_page = 15
+    ordering = ('-created_at',)
+    search_fields = ('address','resource', 'user_id', 'label')
+
     key = fernet_key(app_settings.SAFE_USER_KEY)
+
     _readonly_fields = ['is_used', 'user_id', 'label', 'status', 'created_by']
     createonly_fields = ['address', 'phrase', 'currency']
+
+    @admin.display(ordering='currency__blockchain', description='Blockchain')
+    def get_currency(self, obj):
+        return obj.currency.blockchain
+
+    @admin.display(ordering='currency__network__type', description='Network')
+    def get_network(self, obj):
+        return obj.currency.network.type
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "currency":
