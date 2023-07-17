@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+SECRET_KEY = os.getenv('SECRET_KEY')
+
 ENVIRONMENT_SETTING = os.getenv('ENVIRONMENT_SETTING')
 
 if ENVIRONMENT_SETTING not in ['local', 'development', 'production']:
