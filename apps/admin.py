@@ -15,6 +15,7 @@ class AdminAddress(BaseAdmin):
         'resource',
         'get_currency',
         'get_network',
+        'get_std',
         'is_used',
         'user_id',
         'label',
@@ -36,6 +37,10 @@ class AdminAddress(BaseAdmin):
     @admin.display(ordering='currency__network__type', description='Network')
     def get_network(self, obj):
         return obj.currency.network.type
+
+    @admin.display(ordering='currency__std', description='Std')
+    def get_std(self, obj):
+        return obj.currency.std
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "currency":
