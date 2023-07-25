@@ -17,17 +17,18 @@ class AdminAddress(BaseAdmin):
         'get_network',
         'get_std',
         'is_used',
+        'merchant_code',
         'user_id',
         'label',
         'created_at',
     ]
     list_per_page = 15
     ordering = ('-created_at',)
-    search_fields = ('address','resource', 'user_id', 'label')
+    search_fields = ('address','resource', 'merchant_code', 'user_id', 'label')
 
     key = fernet_key(app_settings.SAFE_USER_KEY)
 
-    _readonly_fields = ['is_used', 'user_id', 'label', 'status', 'created_by']
+    _readonly_fields = ['is_used', 'merchant_code', 'user_id', 'label', 'status', 'created_by']
     createonly_fields = ['address', 'phrase', 'currency']
 
     @admin.display(ordering='currency__blockchain', description='Blockchain')
