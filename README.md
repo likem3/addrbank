@@ -39,7 +39,11 @@ Address Dashboard is a django dashboard to manage, handle and providing availabi
         }
     }
    ```
-7. run application server
+7. run migration
+   ```
+    (venv) python manage.py migrate
+   ```
+8. run application server
    ```
     (venv) python manage.py runserver
    ```
